@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""module is to be documented """
+"""module is to be documented"""
 
 
 import requests
