@@ -24,12 +24,12 @@ if __name__ == "__main__":
      for item in todos_response:
         if item.get('userId') == int(employee_id):
             total_tasks += 1
-          if item.get('completed'):
-              completed_tasks += 1
+        if item.get('completed'):
+            completed_tasks += 1
 
     print("Employee {} is done with tasks({}/{}):"
-         .format(user_response.get('name'),
-         completed_tasks, total_tasks))
+          .format(user_response.get('name'),
+                  completed_tasks, total_tasks))
     for todo in todos_response:
         if todo.get('completed'):
-             print("\t {}" .format(todo.get('title')))
+            print("\t {}" .format(todo.get('title')))
